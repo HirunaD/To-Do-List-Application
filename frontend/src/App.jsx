@@ -29,17 +29,27 @@ const App = () => {
       .catch((err) => console.log(err));
   };
 
+  const completeToDo = (id) => {
+    axios
+      .put(`${baseURL}/complete/${id}`)
+      .then((res) => {
+        console.log(res.data);
+        setUpdateUI((prevState) => !prevState);
+      })
+      .catch((err) => console.log(err));
+  };
+
   return (
     <main>
       <div className="container">
-        <h1 className="title">ToDo App</h1>
+        <h1 className="title">To-Do List</h1>
 
         <div className="input_holder">
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
             type="text"
-            placeholder="Add a ToDo..."
+            placeholder="Add a Task..."
           />
           <button onClick={saveToDo}>Add</button>
         </div>
@@ -50,9 +60,11 @@ const App = () => {
               key={el._id}
               text={el.toDo}
               id={el._id}
+              completed={el.completed}
               setUpdateUI={setUpdateUI}
               setShowPopup={setShowPopup}
               setPopupContent={setPopupContent}
+              completeToDo={completeToDo}
             />
           ))}
         </div>

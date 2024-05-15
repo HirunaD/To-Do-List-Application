@@ -11,12 +11,16 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: fit-content;
+  max-width: 95%; 
+  background-color: #F5F5DC; 
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .title {
   text-align: center;
   font-size: 3rem;
+  color: darkred;
 }
 
 .input_holder {
@@ -36,7 +40,7 @@ button {
 }
 
 input {
-  width: 200px;
+  width: 300px;
 }
 
 input::placeholder {
@@ -61,6 +65,12 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 5px;
+}
+
+.toDo.completed {
+  text-decoration: line-through;
+  background-color: #d3d3d3;
 }
 
 .icons {
