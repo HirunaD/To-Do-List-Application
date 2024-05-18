@@ -1,0 +1,372 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-05-16T16:59:57.568Z",
+    "end": "2024-05-16T17:00:07.542Z",
+    "duration": 9974,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "30f8be0a-f398-48a3-8497-e5c1e6272025",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4d6d72d-8acb-4e8e-8ba9-dba22262dea2",
+          "title": "Add Task",
+          "fullFile": "E:\\My Projects\\React Apps\\To-Do Application\\frontend\\test\\addTask.spec.cjs",
+          "file": "\\test\\addTask.spec.cjs",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Add Task\"",
+              "fullTitle": "Add Task \"before each\" hook in \"Add Task\"",
+              "timedOut": false,
+              "duration": 1141,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "eca07bd6-87ce-4767-9854-bf99f13b2d78",
+              "parentUUID": "b4d6d72d-8acb-4e8e-8ba9-dba22262dea2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Add Task\"",
+              "fullTitle": "Add Task \"after each\" hook in \"Add Task\"",
+              "timedOut": false,
+              "duration": 117,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "00449b6d-9cad-401b-8873-f336dc8f55a3",
+              "parentUUID": "b4d6d72d-8acb-4e8e-8ba9-dba22262dea2",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Add Task",
+              "fullTitle": "Add Task Add Task",
+              "timedOut": false,
+              "duration": 1052,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:5173/\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\"input\")).click()\nawait driver.findElement(By.css(\"input\")).sendKeys(\"New Test 2\")\nawait driver.findElement(By.css(\"button\")).click()",
+              "err": {},
+              "uuid": "c0357b78-7b8a-4618-ba24-004d0f247521",
+              "parentUUID": "b4d6d72d-8acb-4e8e-8ba9-dba22262dea2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c0357b78-7b8a-4618-ba24-004d0f247521"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1052,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "cccc6d77-78b0-4d55-87f7-3c6565bc1d18",
+          "title": "Delete Test",
+          "fullFile": "E:\\My Projects\\React Apps\\To-Do Application\\frontend\\test\\deleteTask.spec.cjs",
+          "file": "\\test\\deleteTask.spec.cjs",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Delete Test\"",
+              "fullTitle": "Delete Test \"before each\" hook in \"Delete Test\"",
+              "timedOut": false,
+              "duration": 1375,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "5506505d-891f-4a26-bce9-0805b27accb2",
+              "parentUUID": "cccc6d77-78b0-4d55-87f7-3c6565bc1d18",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Delete Test\"",
+              "fullTitle": "Delete Test \"after each\" hook in \"Delete Test\"",
+              "timedOut": false,
+              "duration": 110,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "1aa84a6e-16ed-4ec5-ba70-7eeb3cd8df70",
+              "parentUUID": "cccc6d77-78b0-4d55-87f7-3c6565bc1d18",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Delete Test",
+              "fullTitle": "Delete Test Delete Test",
+              "timedOut": false,
+              "duration": 801,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:5173/\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".toDo:nth-child(12) .icon:nth-child(2) > path\")).click()",
+              "err": {},
+              "uuid": "882c053b-12ca-401f-8711-9239d40718be",
+              "parentUUID": "cccc6d77-78b0-4d55-87f7-3c6565bc1d18",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "882c053b-12ca-401f-8711-9239d40718be"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 801,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "74696700-3618-46cb-9183-16796a6e4d68",
+          "title": "Edit Task",
+          "fullFile": "E:\\My Projects\\React Apps\\To-Do Application\\frontend\\test\\editTask.spec.cjs",
+          "file": "\\test\\editTask.spec.cjs",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Edit Task\"",
+              "fullTitle": "Edit Task \"before each\" hook in \"Edit Task\"",
+              "timedOut": false,
+              "duration": 1261,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "2474a30d-a27a-44fc-b0d2-6e2ea93fcba9",
+              "parentUUID": "74696700-3618-46cb-9183-16796a6e4d68",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Edit Task\"",
+              "fullTitle": "Edit Task \"after each\" hook in \"Edit Task\"",
+              "timedOut": false,
+              "duration": 40,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "524d5461-cd4d-43fa-ad23-dd4aeaf528ff",
+              "parentUUID": "74696700-3618-46cb-9183-16796a6e4d68",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Edit Task",
+              "fullTitle": "Edit Task Edit Task",
+              "timedOut": false,
+              "duration": 1606,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:5173/\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\".toDo:nth-child(12) .icon:nth-child(1) > path\")).click()\nawait driver.findElement(By.css(\".popup__input_holder > input\")).click()\nawait driver.findElement(By.css(\".popup__input_holder > input\")).click()\n{\n  const element = await driver.findElement(By.css(\".popup__input_holder > input\"))\n  await driver.actions({ bridge: true}).doubleClick(element).perform()\n}\nawait driver.findElement(By.css(\".popup__input_holder > input\")).click()\nawait driver.findElement(By.css(\".popup__input_holder > input\")).sendKeys(\"Edit Task\")\nawait driver.findElement(By.css(\".popup__input_holder > button\")).click()",
+              "err": {},
+              "uuid": "7e3b0e7e-f897-48f7-ad0b-984d61c3d300",
+              "parentUUID": "74696700-3618-46cb-9183-16796a6e4d68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7e3b0e7e-f897-48f7-ad0b-984d61c3d300"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1606,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        },
+        {
+          "uuid": "847a4ce3-08b6-4023-8515-feb4b96b7810",
+          "title": "Write Task",
+          "fullFile": "E:\\My Projects\\React Apps\\To-Do Application\\frontend\\test\\writeTask.spec.cjs",
+          "file": "\\test\\writeTask.spec.cjs",
+          "beforeHooks": [
+            {
+              "title": "\"before each\" hook in \"Write Task\"",
+              "fullTitle": "Write Task \"before each\" hook in \"Write Task\"",
+              "timedOut": false,
+              "duration": 1541,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "driver = await new Builder().forBrowser('chrome').build()\nvars = {}",
+              "err": {},
+              "uuid": "5659d013-1174-4276-a772-7c5915ba25ca",
+              "parentUUID": "847a4ce3-08b6-4023-8515-feb4b96b7810",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after each\" hook in \"Write Task\"",
+              "fullTitle": "Write Task \"after each\" hook in \"Write Task\"",
+              "timedOut": false,
+              "duration": 43,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.quit();",
+              "err": {},
+              "uuid": "cc77c2ec-0b84-48d6-bc87-c3b9b99d7e38",
+              "parentUUID": "847a4ce3-08b6-4023-8515-feb4b96b7810",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [
+            {
+              "title": "Write Task",
+              "fullTitle": "Write Task Write Task",
+              "timedOut": false,
+              "duration": 877,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "await driver.get(\"http://localhost:5173/\")\nawait driver.manage().window().setRect({ width: 1552, height: 832 })\nawait driver.findElement(By.css(\"input\")).click()\nawait driver.findElement(By.css(\"input\")).sendKeys(\"Write Task\")",
+              "err": {},
+              "uuid": "4f7d8197-4913-4b27-a099-cb71b29e36fd",
+              "parentUUID": "847a4ce3-08b6-4023-8515-feb4b96b7810",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4f7d8197-4913-4b27-a099-cb71b29e36fd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 877,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 30000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.4.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "Report",
+        "": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
