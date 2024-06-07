@@ -1,6 +1,6 @@
 # To-Do Application
 
-This is a simple To-Do application built with React for the frontend and Node.js/Express for the backend.
+This is a simple To-Do application built with React for the frontend and Node.js for the backend.
 
 ## Installation
 
@@ -13,7 +13,7 @@ This is a simple To-Do application built with React for the frontend and Node.js
 2. Navigate to the project directory:
 
    ```bash
-   cd To-Do-Application
+   cd todo-dashboard
    ```
 
 3. Install frontend dependencies:
@@ -49,3 +49,18 @@ This is a simple To-Do application built with React for the frontend and Node.js
    ```
 
    This command will start the backend server using Nodemon, which will automatically restart the server when changes are detected in the source files.
+
+## Unit Testing
+
+Unit tests have been written for this application to ensure code quality and functionality. The tests are written using Selenium-webdriver and Mocha.
+
+To run the unit tests, use the following commands:
+
+1. Navigate to the frontend directory and run the tests:
+
+   ```bash
+   cd frontend
+   npm test
+   ```
+
+   This will run the unit tests for the frontend components and generate a test report.
